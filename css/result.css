@@ -69,7 +69,7 @@ input[id="popup"]+label+div>label{
 
 #resultImg{
     margin:auto;
-
+    margin-bottom:60px;
 }
 .resultChemi-area{
     display:flex;

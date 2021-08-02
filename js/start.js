@@ -106,13 +106,10 @@ function addAnswer(answerText,qIdx,idx)
 
 function setResult(){
     
-    let point = calResult();
-    location.href = './result'+0+'.html';
+
     
-    return;
-    
-    const resulname = document.querySelector('.resultname');
-    resulname.innerHTML = infoList[point].mbti;
+    const resuldesc1 = document.querySelector('.resultDesc1');
+    resuldesc1.innerHTML = infoList[point].desc;
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('#resultImg');
     var imgURL = './image/ham'+point+'.png';
@@ -137,7 +134,8 @@ function goResult(){
 
     },1000)
 
-    setResult();
+    let point = calResult();
+    location.href = './result'+point+'.html';
 }
 
 function goNext(qIdx){
@@ -197,7 +195,7 @@ function resultLoading(){
 
     },490)
 
-   setTimeout(goResult,4000);
+   setTimeout(goResult,3000);
 }
 
 
