@@ -1,0 +1,25 @@
+
+.main
+{  
+    align-items: center;
+    text-align: center;
+}
+.main-BG{
+    width:100%;
+    height: 350px;
+    background-color: #92baff;
+    border-radius:20px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    
+}
+
+
+.test-main-BG{
+    width: 376px;
+    height: 200px;
+    background-color: #92baff;
+}
+.phone-BG{
+    align-content:bottom;
+}
