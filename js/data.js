@@ -1,33 +1,65 @@
 const qnaList = [
     {
-        q:'지옥철 뚫고 회사 도착! 시계를 보니?',
+        q:'다른 사람들에게 자신을 소개하는 것을 어려워 합니다.',
         a:[
-            {answer:'출근 시간 10분 전 도착.\n 지각 그게 뭐죠?',type:['INTP','ISFJ','ISTJ','INFP']},
-            {answer:'8시 59분 도착. \n 매일매일 짜릿한 출근.',type:['ENTJ','ESFJ','ESTP','ENFP']}
+            {answer:'그런 편이다.',type:['ENTJ','ESFJ','ESTP','ENFP']},
+            {answer:'아니다.',type:['INTP','ISFJ','ISTJ','INFP']}
         ]
 
     },
     {
-        q:'2.친구고민들어줄때공감잘함',
+        q:'이메일에 가능한 빨리 회신하려고 하고 지저분한 편지함을 참을 수 없습니다.',
         a:[
-            {answer:'안이오',type:['ENTJ','ESTP','INTP','ISTJ']},
-            {answer:'네',type:['ESFJ','ENFP','ISFJ','INFP']}
+            {answer:'그런 편이다.',type:['ENTJ','ESFJ','ISFJ','ISTJ']},
+            {answer:'아니다.',type:['INTP','ENFP','ESTP','INFP']}
         ]
 
     },
     {
-        q:'3.계획적임',
+        q:'보통 대화를 먼저 시작하지 않습니다.',
         a:[
-            {answer:'네',type:['ENTJ','ESFJ','ISFJ','ISTJ']},
-            {answer:'아니오',type:['ESTP','ENFP','INTP','INFP']}
+            {answer:'그런 편이다.',type:['INTP','ISFJ','ISTJ','INFP']},
+            {answer:'아니다.',type:['ENTJ','ESFJ','ESTP','ENFP']}
         ]
 
     },
     {
-        q:'4.집에있는게행복함',
+        q:'논쟁에서 이기는 것이 상대방을 불쾌하지 않도록 하는 것보다 더 중요합니다.',
         a:[
-            {answer:'아니오',type:['ENTJ','ESFJ','ESTP','ENFP']},
-            {answer:'네',type:['INTP','ISFJ','ISTJ','INFP']}
+            {answer:'그런 편이다',type:['ENTJ','INTP','ESTP','ISTJ']},
+            {answer:'아니다',type:['ISFJ','INFP','ESFJ','ENFP']}
+        ]
+
+    },
+    {
+        q:'종종 다른 사람들의 감정에 공감하기가 어렵습니다.',
+        a:[
+            {answer:'그런 편이다',type:['ENTJ','INTP','ESTP','ISTJ']},
+            {answer:'아니다',type:['ISFJ','INFP','ESFJ','ENFP']}
+        ]
+
+    },
+    {
+        q:'보통 여행 계획은 철저하게 세우는 편입니다.',
+        a:[
+            {answer:'그런 편이다.',type:['ENTJ','ESFJ','ISFJ','ISTJ']},
+            {answer:'아니다.',type:['INTP','ENFP','ESTP','INFP']}
+        ]
+
+    },
+    {
+        q:'토론 시 사람들의 민감한 반응보다 보다 진실을 더 중요시해야 합니다.',
+        a:[
+            {answer:'그런 편이다',type:['ENTJ','INTP','ESTP','ISTJ']},
+            {answer:'아니다',type:['ISFJ','INFP','ESFJ','ENFP']}
+        ]
+
+    },
+    {
+        q:'재미있는 책이나 비디오 게임이 종종 사교 모임보다 더 낫습니다.',
+        a:[
+            {answer:'그런 편이다.',type:['INTP','ISFJ','ISTJ','INFP']},
+            {answer:'아니다.',type:['ENTJ','ESFJ','ESTP','ENFP']}
         ]
 
     }
@@ -36,34 +68,34 @@ const infoList = [
     
     {
         mbti:'ENTJ',
-        desc:'인트제다'
+        desc:'어디서든 리더 - 완벽보스'
     },
     {
         mbti:'ESFJ',
-        desc:'엣프제다 '
+        desc:' 탕비실 요정 - 만인의 최애캐 '
     },
     {
         mbti:'ESTP',
-        desc:'엣팁이다 '
+        desc:'일단시작하죠 - 행동대장 '
     },    
     {
         mbti:'ENFP',
-        desc:'엔프피다 '
+        desc:' 이구역의 텐션갑 - 회식의 제왕'
     },
     {
         mbti:'INTP',
-        desc:'인팁이다 '
+        desc:'팩트 가져와 - 물음표 살인마 '
     },
     {
         mbti:'ISFJ',
-        desc:'잇프제다 '
+        desc:'다투지 마세요 - 평화주의자'
     },
     {
         mbti:'ISTJ',
-        desc:'잇트제다 '
+        desc:' 철두철미 - 워커홀릭 '
     },
     {
         mbti:'INFP',
-        desc:'인프피다'
+        desc:'내 품안에 사직서 - 겉따속차'
     }    
 ]
