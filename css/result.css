@@ -67,6 +67,10 @@ input[id="popup"]+label+div>label{
     border-top-right-radius:0px;
 }
 
+.resultDesc-bg-con{
+
+}
+
 #resultImg{
     margin:auto;
     margin-bottom:60px;
@@ -132,7 +136,11 @@ input[id="popup"]+label+div>label{
     border-radius: 24px;
     background-color: white;
     border:5px dotted #C9E1FF;
-
+    
+    background-image: url("../image/bg_con1.png");  
+    background-position:50%,50%;
+    background-size:50%;
+    background-repeat:no-repeat;
 }
 .resultDesc{
     text-align:left;
