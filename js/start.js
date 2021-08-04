@@ -4,7 +4,7 @@ const loading = document.querySelector("#loading");
 const result = document.querySelector("#result");
 
 
-const qnaBG = document.querySelector('.QnA-BG');
+const qnaBG = document.querySelector('.QnA-BG2');
 const qnaBox = document.querySelector('.QnABox-BG');
 const endPoint = qnaList.length;
 const select = [];
@@ -82,7 +82,11 @@ function addAnswer(answerText,qIdx,idx)
     answer.innerHTML = answerText;
     
     answer.addEventListener("click", function(){
-        nextAni();
+        var q_img = document.querySelector('.QnA-img');
+        q_img.style.WebkitAnimation = "fadeOut 1s";
+        q_img.style.animation ="fadeOut 1s";
+        
+        
         var children = document.querySelectorAll('.answerList');
         for(let i = 0; i < children.length; i++){
             children[i].disabled = true;
@@ -150,31 +154,19 @@ function goNext(qIdx){
     q.innerHTML = qnaList[qIdx].q;
     var q_img = document.querySelector('.QnA-img');
     q_img.src='./image/ham'+qIdx+'.png';
+    q_img.style.WebkitAnimation = "fadeIn 0.5s";
+    q_img.style.animation = "fadeIn 0.5s";
     
     for(let i in qnaList[qIdx].a){
         addAnswer(qnaList[qIdx].a[i].answer,qIdx,i);
     }
     
+    var count = document.querySelector('.QnA-Count');
+    count.innerHTML = (qIdx+1) +' / ' +endPoint;
     var status = document.querySelector('.statusBar');
     status.style.width = (100/endPoint) * (qIdx+1) +'%';
 }
 
-
-function nextAni()
-{
-
-    qnaBG.style.WebkitAnimation = "MidUp 1s";
-    qnaBG.style.animation ="MidUp 1s";
-    
-    setTimeout(()=>{
-
-        setTimeout(()=>{
-        },490)
-                
-        qnaBG.style.WebkitAnimation = "TopDown 1s";
-        qnaBG.style.animation = "TopDown 1s";
-    },490)
-}
 
 
 

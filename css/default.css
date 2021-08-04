@@ -1,10 +1,15 @@
-.BG{
-    background-image: linear-gradient(to bottom, #f1f6ff, #eff8fc);
-    background-attachment:fixed;
+.main-BG{
+    background-color:#f1f6ff;
+    background-image:url('../image/Bg_main1.png');
+    background-position:center top;
+    background-size:contain;
+    background-repeat:repeat-x;
+
     height:100vh;
-    width:100%;
     position:relative;
     transition:all 0.35s;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -121,7 +126,7 @@ input[id="menuicon"]:checked +label span:nth-child(3){
 }
 
 .button-start{
-    padding:5px;
+  padding:5px;
   text-decoration:none;
   width: 200px;
   height: 48px;
